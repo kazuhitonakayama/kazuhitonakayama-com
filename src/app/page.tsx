@@ -8,7 +8,7 @@ export default function Home() {
       </div>
 
       <div className="text-2xl font-bold tracking-widest mb-8">
-        <p className="mb-4">&ldquo;<span className="sm:text-9xl">We</span>&apos;re all <span className="sm:text-9xl">traveling</span> through time together every day of our lives</p>
+        <p className="mb-4">&ldquo;<span className="sm:text-9xl">We</span>&apos;re all <span className="sm:text-9xl">traveling</span> through time together every day of our lives.</p>
         <p>All we can do is do our best to <span className="sm:text-9xl">relish</span> this remarkable ride.&rdquo;</p>
       </div>
 
