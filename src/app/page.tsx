@@ -18,8 +18,8 @@ export default function Home() {
         </div>
 
         <div className="text-2xl font-bold tracking-widest mb-8">
-          <p className="mb-4">&ldquo;<span className="sm:text-9xl">We</span>&apos;re all <span className="sm:text-9xl">traveling</span> through time together every day of our lives.</p>
-          <p className="mb-4">All we can do is do our best to <span className="sm:text-9xl">relish</span> this remarkable ride.&rdquo;</p>
+          <p className="mb-4"><span className="sm:hidden">&ldquo;</span><span className="sm:text-9xl">We</span>&apos;re all <span className="sm:text-9xl">traveling</span> through time together every day of our lives.</p>
+          <p className="mb-4">All we can do is do our best to <span className="sm:text-9xl">relish</span> this remarkable ride.<span className="sm:hidden">&rdquo;</span></p>
           <p className="text-sm sm:hidden">
             &ldquo;僕らはみんなでこの人生をタイムトラベルしているんだ。<br />
             ただ、この素晴らしい旅を楽しもう。&rdquo;
