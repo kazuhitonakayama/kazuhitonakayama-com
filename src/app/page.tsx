@@ -34,10 +34,17 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <h2 className={`mb-3 text-2xl font-semibold`}>
-              Scrapbox{' '}
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                -&gt;
-              </span>
+              <div className="flex">
+                <Image
+                  src="https://nota.github.io/press-kit/Scrapbox-circle.svg"
+                  width={30}
+                  height={30}
+                  alt="scrapbox logo"
+                /> Scrapbox{' '}
+                <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                  -&gt;
+                </span>
+              </div>
             </h2>
             <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
               Notes on my brain. <br />
@@ -52,10 +59,17 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <h2 className={`mb-3 text-2xl font-semibold`}>
-              Zenn{' '}
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                -&gt;
-              </span>
+              <div className="flex">
+                <Image
+                  src="/zenn.svg"
+                  width={30}
+                  height={30}
+                  alt="zenn logo"
+                /> Zenn{' '}
+                <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                  -&gt;
+                </span>
+              </div>
             </h2>
             <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
               My articles about technology is here.
@@ -69,10 +83,17 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <h2 className={`mb-3 text-2xl font-semibold`}>
-              Qiita{' '}
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                -&gt;
-              </span>
+              <div className="flex">
+                <Image
+                  src="/qiita.png"
+                  width={30}
+                  height={30}
+                  alt="qiita logo"
+                /> Qiita{' '}
+                <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                  -&gt;
+                </span>
+              </div>
             </h2>
             <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
             My articles about technology is here.
@@ -86,10 +107,17 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <h2 className={`mb-3 text-2xl font-semibold`}>
-              SpeakerDeck{' '}
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                -&gt;
-              </span>
+              <div className="flex">
+                <Image
+                  src="/speakerdeck.svg"
+                  width={30}
+                  height={30}
+                  alt="qiita logo"
+                /> SpeakerDeck{' '}
+                <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                  -&gt;
+                </span>
+              </div>
             </h2>
             <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
               My outputs is here.
