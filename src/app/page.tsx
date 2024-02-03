@@ -12,7 +12,7 @@ export default function Home() {
         <p>All we can do is do our best to <span className="sm:text-9xl">relish</span> this remarkable ride.&rdquo;</p>
       </div>
 
-      <div className="text-normal tracking-widest">
+      <div className="text-normal tracking-widest font-bold">
         <p>I am Software Engineer for Social Good.</p>
       </div>
 
