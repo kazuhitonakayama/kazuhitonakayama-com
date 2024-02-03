@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="min-h-screen sm:p-24 p-7">
+    <main className="min-h-screen p-7">
       <div className="flex flex-col items-center justify-between gap-y-9 container mx-auto">
         <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
           <a href="/">Kazuhito Nakayama</a>
