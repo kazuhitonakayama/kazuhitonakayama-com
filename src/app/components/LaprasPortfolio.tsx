@@ -38,6 +38,10 @@ export default async function LaprasPortfolio() {
           </span>
         </p>
         {data ? (
+          <>
+            {data.description && (
+              <p className="mt-3 text-sm font-medium opacity-70 tracking-wide">{data.description}</p>
+            )}
           <div className="mt-4 flex flex-col sm:flex-row items-center gap-6">
             <div className="flex flex-col items-center gap-1">
               <RadarChart e={data.e_score} b={data.b_score} i={data.i_score} />
@@ -54,6 +58,7 @@ export default async function LaprasPortfolio() {
               <ScoreBar label="Influence" score={data.i_score} color="bg-purple-500" />
             </div>
           </div>
+          </>
         ) : (
           <p className="mt-2 text-sm opacity-50">
             My technical portfolio and skill scores on LAPRAS.
