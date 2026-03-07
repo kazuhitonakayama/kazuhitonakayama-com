@@ -34,13 +34,13 @@ export default async function Home() {
 
         <LaprasPortfolio />
 
-{laprasData?.events && (
-          <Events events={laprasData.events} />
-        )}
-
-        <SpeakerDeckCards />
+<SpeakerDeckCards />
 
         <ZennArticles />
+
+        {laprasData?.events && (
+          <Events events={laprasData.events} />
+        )}
       </div>
     </main>
   )
