@@ -1,8 +1,13 @@
+import { fetchLaprasData } from './lib/lapras'
 import LaprasPortfolio from './components/LaprasPortfolio'
+import GitHubRepositories from './components/GitHubRepositories'
+import Events from './components/Events'
 import SpeakerDeckCards from './components/SpeakerDeckCards'
 import ZennArticles from './components/ZennArticles'
 
-export default function Home() {
+export default async function Home() {
+  const laprasData = await fetchLaprasData()
+
   return (
     <main className="min-h-screen p-7">
       <div className="flex flex-col items-center justify-between gap-y-9 container mx-auto">
@@ -29,6 +34,14 @@ export default function Home() {
         </div>
 
         <LaprasPortfolio />
+
+        {laprasData?.github_repositories && (
+          <GitHubRepositories repositories={laprasData.github_repositories} />
+        )}
+
+        {laprasData?.events && (
+          <Events events={laprasData.events} />
+        )}
 
         <SpeakerDeckCards />
 
