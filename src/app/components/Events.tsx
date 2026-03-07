@@ -9,7 +9,7 @@ export default function Events({ events }: { events: LaprasEvent[] }) {
 
   return (
     <section className="w-full max-w-5xl">
-      <h2 className="text-2xl font-bold tracking-widest mb-6">Events</h2>
+      <h2 className="text-2xl font-bold tracking-widest mb-6">📅 Events</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {sorted.map((event) => (
           <a

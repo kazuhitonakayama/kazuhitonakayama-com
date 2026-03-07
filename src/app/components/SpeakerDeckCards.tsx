@@ -50,7 +50,7 @@ export default async function SpeakerDeckCards() {
 
   return (
     <section className="w-full max-w-5xl">
-      <h2 className="text-2xl font-bold tracking-widest mb-6">Presentations</h2>
+      <h2 className="text-2xl font-bold tracking-widest mb-6">🎤 Presentations</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {results.map((deck) => (
           <a
