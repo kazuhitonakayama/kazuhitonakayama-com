@@ -1,4 +1,5 @@
 import LaprasPortfolio from './components/LaprasPortfolio'
+import GithubRepositories from './components/GithubRepositories'
 import SpeakerDeckCards from './components/SpeakerDeckCards'
 import ZennArticles from './components/ZennArticles'
 
@@ -29,6 +30,8 @@ export default function Home() {
         </div>
 
         <LaprasPortfolio />
+
+        <GithubRepositories />
 
         <SpeakerDeckCards />
 

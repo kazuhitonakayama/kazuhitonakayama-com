@@ -1,4 +1,24 @@
-export default function LaprasPortfolio() {
+import { fetchLaprasData } from '../lib/lapras'
+
+function ScoreBar({ label, score, color }: { label: string; score: number; color: string }) {
+  const percentage = Math.min(score * 100 / 4.5, 100)
+  return (
+    <div className="flex items-center gap-3">
+      <span className="text-xs font-semibold w-24 text-neutral-600 dark:text-neutral-400">{label}</span>
+      <div className="flex-1 h-2 rounded-full bg-neutral-200 dark:bg-neutral-700 overflow-hidden">
+        <div
+          className={`h-full rounded-full ${color}`}
+          style={{ width: `${percentage}%` }}
+        />
+      </div>
+      <span className="text-sm font-bold w-10 text-right">{score.toFixed(2)}</span>
+    </div>
+  )
+}
+
+export default async function LaprasPortfolio() {
+  const data = await fetchLaprasData()
+
   return (
     <section className="w-full max-w-5xl">
       <h2 className="text-2xl font-bold tracking-widest mb-6">LAPRAS Portfolio</h2>
@@ -14,9 +34,17 @@ export default function LaprasPortfolio() {
             →
           </span>
         </p>
-        <p className="mt-2 text-sm opacity-50">
-          My technical portfolio and skill scores on LAPRAS.
-        </p>
+        {data ? (
+          <div className="mt-4 space-y-2.5">
+            <ScoreBar label="Technical" score={data.e_score} color="bg-blue-500" />
+            <ScoreBar label="Business" score={data.b_score} color="bg-emerald-500" />
+            <ScoreBar label="Influence" score={data.i_score} color="bg-amber-500" />
+          </div>
+        ) : (
+          <p className="mt-2 text-sm opacity-50">
+            My technical portfolio and skill scores on LAPRAS.
+          </p>
+        )}
       </a>
     </section>
   )
