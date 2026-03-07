@@ -40,7 +40,7 @@ export default async function LaprasPortfolio() {
         {data ? (
           <>
             {data.description && (
-              <p className="mt-3 text-sm font-medium opacity-70 tracking-wide">{data.description}</p>
+              <p className="mt-3 text-sm font-medium opacity-70 tracking-wide">{data.description.length > 100 ? `${data.description.slice(0, 100)}...` : data.description}</p>
             )}
           <div className="mt-4 flex flex-col sm:flex-row items-center gap-6">
             <div className="flex flex-col items-center gap-1">
