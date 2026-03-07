@@ -1,3 +1,4 @@
+import LaprasPortfolio from './components/LaprasPortfolio'
 import SpeakerDeckCards from './components/SpeakerDeckCards'
 import ZennArticles from './components/ZennArticles'
 
@@ -26,6 +27,8 @@ export default function Home() {
             ただ、この素晴らしい旅を楽しもう。&rdquo;
           </p>
         </div>
+
+        <LaprasPortfolio />
 
         <SpeakerDeckCards />
 

@@ -52,7 +52,7 @@ export default async function ZennArticles() {
             href={`https://zenn.dev${article.path}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="group block rounded-xl border border-neutral-200 dark:border-neutral-700 overflow-hidden transition-colors hover:border-gray-400 hover:bg-gray-50 hover:dark:border-neutral-500 hover:dark:bg-neutral-800/50"
+            className="group block rounded-xl border border-neutral-200 dark:border-neutral-700 overflow-hidden transition-colors bg-white dark:bg-neutral-900 hover:border-gray-400 hover:bg-gray-50 hover:dark:border-neutral-500 hover:dark:bg-neutral-800/50"
           >
             <div className="aspect-[16/9] w-full bg-gradient-to-br from-blue-50 to-sky-100 dark:from-blue-950 dark:to-sky-900 flex flex-col items-center justify-center px-4 gap-2">
               <span className="text-5xl drop-shadow-sm">{article.emoji}</span>

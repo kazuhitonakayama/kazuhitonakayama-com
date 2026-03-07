@@ -58,7 +58,7 @@ export default async function SpeakerDeckCards() {
             href={deck.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="group block rounded-xl border border-neutral-200 dark:border-neutral-700 overflow-hidden transition-colors hover:border-gray-400 hover:bg-gray-50 hover:dark:border-neutral-500 hover:dark:bg-neutral-800/50"
+            className="group block rounded-xl border border-neutral-200 dark:border-neutral-700 overflow-hidden transition-colors bg-white dark:bg-neutral-900 hover:border-gray-400 hover:bg-gray-50 hover:dark:border-neutral-500 hover:dark:bg-neutral-800/50"
           >
             {deck.oembed?.html ? (
               <div
