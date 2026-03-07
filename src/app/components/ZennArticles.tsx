@@ -54,19 +54,22 @@ export default async function ZennArticles() {
             rel="noopener noreferrer"
             className="group block rounded-xl border border-neutral-200 dark:border-neutral-700 overflow-hidden transition-colors hover:border-gray-400 hover:bg-gray-50 hover:dark:border-neutral-500 hover:dark:bg-neutral-800/50"
           >
-            <div className="aspect-[16/9] w-full bg-gradient-to-br from-blue-50 to-sky-100 dark:from-blue-950 dark:to-sky-900 flex items-center justify-center">
-              <span className="text-6xl drop-shadow-sm">{article.emoji}</span>
-            </div>
-            <div className="px-4 py-3">
-              <p className="font-semibold text-sm line-clamp-2 group-hover:underline">
+            <div className="aspect-[16/9] w-full bg-gradient-to-br from-blue-50 to-sky-100 dark:from-blue-950 dark:to-sky-900 flex flex-col items-center justify-center px-4 gap-2">
+              <span className="text-5xl drop-shadow-sm">{article.emoji}</span>
+              <p className="text-sm font-bold text-neutral-700 dark:text-neutral-200 text-center line-clamp-2 leading-snug">
                 {article.title}
-                <span className="inline-block transition-transform group-hover:translate-x-1 ml-1">
-                  →
-                </span>
               </p>
-              <p className="text-xs text-neutral-500 dark:text-neutral-400 mt-2">
+            </div>
+            <div className="px-4 py-3 flex items-center justify-between">
+              <p className="text-xs text-neutral-500 dark:text-neutral-400">
                 {new Date(article.published_at).toLocaleDateString('ja-JP')}
               </p>
+              <span className="text-xs font-semibold group-hover:underline">
+                Read
+                <span className="inline-block transition-transform group-hover:translate-x-1 ml-0.5">
+                  →
+                </span>
+              </span>
             </div>
           </a>
         ))}
