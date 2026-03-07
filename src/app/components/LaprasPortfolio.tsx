@@ -24,7 +24,7 @@ export default async function LaprasPortfolio() {
 
   return (
     <section className="w-full max-w-5xl">
-      <h2 className="text-2xl font-bold tracking-widest mb-6">LAPRAS Portfolio</h2>
+      <h2 className="text-2xl font-bold tracking-widest mb-6">📊 LAPRAS Portfolio</h2>
       <a
         href="https://lapras.com/public/kazuhito_nakayama"
         target="_blank"

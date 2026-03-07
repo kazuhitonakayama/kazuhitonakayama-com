@@ -41,6 +41,7 @@ export default async function ZennArticles() {
     <section className="w-full max-w-5xl">
       <h2 className="text-2xl font-bold tracking-widest mb-6">
         <div className="flex items-center gap-2">
+          ✍️
           <Image src="/zenn.svg" width={28} height={28} alt="Zenn logo" />
           Zenn Articles
         </div>
