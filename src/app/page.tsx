@@ -1,6 +1,5 @@
 import { fetchLaprasData } from './lib/lapras'
 import LaprasPortfolio from './components/LaprasPortfolio'
-import GitHubRepositories from './components/GitHubRepositories'
 import Events from './components/Events'
 import SpeakerDeckCards from './components/SpeakerDeckCards'
 import ZennArticles from './components/ZennArticles'
@@ -35,11 +34,7 @@ export default async function Home() {
 
         <LaprasPortfolio />
 
-        {laprasData?.github_repositories && (
-          <GitHubRepositories repositories={laprasData.github_repositories} />
-        )}
-
-        {laprasData?.events && (
+{laprasData?.events && (
           <Events events={laprasData.events} />
         )}
 

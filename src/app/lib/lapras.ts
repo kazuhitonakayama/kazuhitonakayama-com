@@ -1,16 +1,3 @@
-export type LaprasGitHubRepository = {
-  id: number
-  title: string
-  url: string
-  is_oss: boolean
-  is_fork: boolean
-  is_owner: boolean
-  description: string
-  stargazers_count: number
-  forks: number
-  language: string
-}
-
 export type LaprasEvent = {
   title: string
   url: string
@@ -25,7 +12,6 @@ export type LaprasData = {
   e_score: number
   b_score: number
   i_score: number
-  github_repositories: LaprasGitHubRepository[]
   events: LaprasEvent[]
 }
 
