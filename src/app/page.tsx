@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import LaprasPortfolio from './components/LaprasPortfolio'
 import SpeakerDeckCards from './components/SpeakerDeckCards'
 import ZennArticles from './components/ZennArticles'
 
@@ -103,6 +104,8 @@ export default function Home() {
           </a>
 
         </div>
+
+        <LaprasPortfolio />
 
         <ZennArticles />
 
