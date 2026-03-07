@@ -27,9 +27,9 @@ export default function Home() {
           </p>
         </div>
 
-        <ZennArticles />
-
         <SpeakerDeckCards />
+
+        <ZennArticles />
       </div>
     </main>
   )
