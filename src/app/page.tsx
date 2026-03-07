@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import SpeakerDeckCards from './components/SpeakerDeckCards'
 import ZennArticles from './components/ZennArticles'
 
@@ -26,82 +25,6 @@ export default function Home() {
             &ldquo;僕らはみんなでこの人生をタイムトラベルしているんだ。<br />
             ただ、この素晴らしい旅を楽しもう。&rdquo;
           </p>
-        </div>
-
-        <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-3 lg:text-left">
-          <a
-            href="https://scrapbox.io/kazuhitonakayama/"
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={`mb-3 text-2xl font-semibold`}>
-              <div className="flex">
-                <Image
-                  src="https://nota.github.io/press-kit/Scrapbox-circle.svg"
-                  width={30}
-                  height={30}
-                  alt="scrapbox logo"
-                /> Scrapbox{' '}
-                <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                  -&gt;
-                </span>
-              </div>
-            </h2>
-            <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-              Notes on my brain. <br />
-              All my thiking is here.
-            </p>
-          </a>
-
-          <a
-            href="https://zenn.dev/be_the_light"
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={`mb-3 text-2xl font-semibold`}>
-              <div className="flex">
-                <Image
-                  src="/zenn.svg"
-                  width={30}
-                  height={30}
-                  alt="zenn logo"
-                /> Zenn{' '}
-                <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                  -&gt;
-                </span>
-              </div>
-            </h2>
-            <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-              My articles about technology is here.
-            </p>
-          </a>
-
-          <a
-            href="https://qiita.com/kazuhito_nakayama"
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={`mb-3 text-2xl font-semibold`}>
-              <div className="flex">
-                <Image
-                  src="/qiita.png"
-                  width={30}
-                  height={30}
-                  alt="qiita logo"
-                /> Qiita{' '}
-                <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                  -&gt;
-                </span>
-              </div>
-            </h2>
-            <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            My articles about technology is here.
-            </p>
-          </a>
-
         </div>
 
         <ZennArticles />
