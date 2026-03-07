@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import SpeakerDeckCards from './components/SpeakerDeckCards'
+import ZennArticles from './components/ZennArticles'
 
 export default function Home() {
   return (
@@ -102,6 +103,8 @@ export default function Home() {
           </a>
 
         </div>
+
+        <ZennArticles />
 
         <SpeakerDeckCards />
       </div>
