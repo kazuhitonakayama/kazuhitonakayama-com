@@ -86,6 +86,16 @@ export default async function SpeakerDeckCards() {
           </a>
         ))}
       </div>
+      <div className="mt-8 text-center">
+        <a
+          href="https://speakerdeck.com/kazuhitonakayama"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block rounded-lg border border-neutral-300 dark:border-neutral-600 px-6 py-3 text-sm font-semibold tracking-wide transition-colors hover:bg-gray-100 hover:dark:bg-neutral-800"
+        >
+          View more presentations →
+        </a>
+      </div>
     </section>
   )
 }
