@@ -4,6 +4,7 @@ import Events from './components/Events'
 import SpeakerDeckCards from './components/SpeakerDeckCards'
 import ZennArticles from './components/ZennArticles'
 import HatenaBlogPosts from './components/HatenaBlogPosts'
+import CompanyTechBlog from './components/CompanyTechBlog'
 
 export default async function Home() {
   const laprasData = await fetchLaprasData()
@@ -34,6 +35,8 @@ export default async function Home() {
         </div>
 
         <LaprasPortfolio />
+
+        <CompanyTechBlog />
 
         <HatenaBlogPosts />
 
