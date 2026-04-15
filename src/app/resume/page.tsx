@@ -16,7 +16,7 @@ export default async function ResumePage() {
   return (
     <main className="min-h-screen p-7">
       <div className="container mx-auto max-w-3xl">
-        <article className="prose prose-slate max-w-none prose-headings:font-bold prose-a:text-blue-600 prose-table:text-sm">
+        <article className="prose prose-slate max-w-none prose-headings:font-bold prose-a:text-blue-600 prose-table:text-sm marker:text-black">
           <ReactMarkdown remarkPlugins={[remarkGfm]}>{markdown}</ReactMarkdown>
         </article>
       </div>
